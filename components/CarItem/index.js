@@ -3,8 +3,8 @@ import { View, ImageBackground, Text } from "react-native";
 import styles from "./styles";
 import StyledButton from "../StyledButton";
 
-const CardItem = (props) => {
-  const { name, tagline, taglineCTA, image } = props;
+const CarItem = (props) => {
+  const { name, tagline, taglineCTA, image } = props.car;
   return (
     <View style={styles.cardContainer}>
       <ImageBackground source={image} style={styles.image} />
@@ -35,4 +35,4 @@ const CardItem = (props) => {
   );
 };
 
-export default CardItem;
+export default CarItem;
